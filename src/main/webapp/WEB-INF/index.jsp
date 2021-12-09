@@ -17,7 +17,7 @@
     <!-- //// CSS LINKS //////////////////////////////////////// -->
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	<title>TITLE</title>
+	<title>Dojos and Ninjas</title>
 </head>
 <body>
     <!-- //// HEADER /////////////////////////////////////////// -->
@@ -25,8 +25,8 @@
 		<div class="navbar navbar-dark bg-dark box-shadow">
 			<div class="container d-flex justify-content-between">
 				<a href="/" class="navbar-brand d-flex align-items-center"> <strong
-					class="text-warning">TITLE</strong>
-				</a> <a class="btn btn-secondary " href="/">HOME</a>
+					class="text-warning">DOJOS AND NINJAS</strong>
+				</a> <a class="btn btn-secondary " href="/dojos">HOME</a>
 			</div>
 		</div>
 	</header>
@@ -34,7 +34,7 @@
 	<!-- //// MAIN AREA //////////////////////////////////////// -->
 	<main role="main">
 		<div class="container mt-4">
-
+			<h1>Dojos and Ninjas</h1>
 		</div>
 	</main>
 
