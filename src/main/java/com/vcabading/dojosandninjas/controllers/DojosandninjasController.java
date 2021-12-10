@@ -55,6 +55,19 @@ public class DojosandninjasController {
 			return "redirect:/dojos";
 		}
     }
+	
+	@PostMapping("/ninjas/new")
+	public String ninjasNewPost(@Valid @ModelAttribute("ninja") Ninja ninja,
+				BindingResult result, Model model) {
+		if (result.hasErrors()) {
+			List<Dojo> dojosList = this.dojoServ.retrieveAll();
+			model.addAttribute("dojosList",dojosList);
+			return "ninjasnew.jsp";
+		} else {
+			this.ninjaServ.create(ninja);
+			return "redirect:/dojos";
+		}
+    }
 
 	// //// RETRIEVE ///////////////////////////////////////////////
 

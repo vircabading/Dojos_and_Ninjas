@@ -57,7 +57,7 @@
 						<form:errors path="firstName" class="alert alert-danger mb-3" />
 					</p>
 					<p class="form-group">
-						<form:label path="lastName">First Name:</form:label>
+						<form:label path="lastName">Last Name:</form:label>
 						<form:input class="form-control mb-3" path="lastName" />
 						<form:errors path="lastName" class="alert alert-danger mb-3" />
 					</p>
