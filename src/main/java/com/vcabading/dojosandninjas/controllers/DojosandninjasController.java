@@ -35,10 +35,6 @@ public class DojosandninjasController {
 
 	// //// SHOW ///////////////////////////////////////////////////
 
-	@GetMapping("/ninjas/new")
-	public String ninjasNew(@ModelAttribute("ninja") Ninja ninja) {
-		return "ninjasnew.jsp";
-	}
 
 	@GetMapping("/dojos/new")
 	public String dojosNew(@ModelAttribute("dojo") Dojo dojo) {
@@ -72,6 +68,13 @@ public class DojosandninjasController {
 	@GetMapping("/dojos/{id}")
 	public String dojosId(@PathVariable("id") Long id) {
 		return "dojosid.jsp";
+	}
+
+	@GetMapping("/ninjas/new")
+	public String ninjasNew(@ModelAttribute("ninja") Ninja ninja, Model model) {
+		List<Dojo> dojosList = this.dojoServ.retrieveAll();
+		model.addAttribute("dojosList", dojosList);
+		return "ninjasnew.jsp";
 	}
 
 	// //// UPDATE /////////////////////////////////////////////////
