@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.vcabading.dojosandninjas.models.Dojo;
+import com.vcabading.dojosandninjas.models.Ninja;
 import com.vcabading.dojosandninjas.services.DojoService;
 import com.vcabading.dojosandninjas.services.NinjaService;
 
@@ -35,7 +36,7 @@ public class DojosandninjasController {
 	// //// SHOW ///////////////////////////////////////////////////
 
 	@GetMapping("/ninjas/new")
-	public String ninjasNew() {
+	public String ninjasNew(@ModelAttribute("ninja") Ninja ninja) {
 		return "ninjasnew.jsp";
 	}
 

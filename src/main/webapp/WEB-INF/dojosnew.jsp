@@ -45,8 +45,8 @@
 				<form:form action="/dojos/new" method="post" modelAttribute="dojo">
 					<p class="form-group">
 						<form:label path="name">Dojo name:</form:label>
-						<form:errors path="name" class="alert" />
 						<form:input class="form-control mb-3" path="name" />
+						<form:errors path="name" class="alert alert-danger mb-3" />
 					</p>
 					<input class="btn btn-success" type="submit"
 						value="Submit New Dojo" />

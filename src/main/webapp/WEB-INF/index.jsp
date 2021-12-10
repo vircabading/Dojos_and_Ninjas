@@ -44,7 +44,7 @@
 				<button class="col btn btn-warning m-3" onclick="window.location.href='/dojos/new';">ADD NEW DOJO</button>
 				<button class="col btn btn-success m-3"onclick="window.location.href='/ninjas/new';">ADD NEW NINJA</button>
 			</div>
-			<table class="table table-striped">
+			<table class="table">
 				<thead class="thead-dark">
 					<tr>
 						<th scope="col"><strong>ID</strong></th>
