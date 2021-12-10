@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.vcabading.dojosandninjas.models.Dojo;
@@ -47,7 +48,7 @@ public class DojosandninjasController {
 	}
 	
 	@GetMapping("/dojos/new")
-	public String dojosNew() {
+	public String dojosNew(@ModelAttribute("dojo") Dojo dojo) {
 			return "dojosnew.jsp";
 	}
 

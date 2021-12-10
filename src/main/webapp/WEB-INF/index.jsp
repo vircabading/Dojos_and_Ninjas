@@ -41,14 +41,14 @@
 		<div class="container mt-4 bg-info rounded">
 			<h1>Dojos and Ninjas Index</h1>
 			<div class="row">
-				<button class="col btn btn-warning m-3">ADD NEW DOJO</button>
-				<button class="col btn btn-success m-3">ADD NEW NINJA</button>
+				<button class="col btn btn-warning m-3" onclick="window.location.href='/dojos/new';">ADD NEW DOJO</button>
+				<button class="col btn btn-success m-3"onclick="window.location.href='/ninjas/new';">ADD NEW NINJA</button>
 			</div>
 			<table class="table table-striped">
 				<thead class="thead-dark">
 					<tr>
 						<th scope="col"><strong>ID</strong></th>
-						<th scope="col"><strong>Name</strong></th>
+						<th scope="col"><strong>Dojo</strong></th>
 						<th scope="col"><strong>Action</strong></th>
 					</tr>
 				</thead>
