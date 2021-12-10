@@ -36,6 +36,7 @@ public class Dojo {
 	@Size(min=1, max=255, message="Name must be at least one character in length")
 	private String name;
 	
+
 	@Column(updatable=false)		// this will not allow createdAt to be updated after creation
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date createdAt;
@@ -61,7 +62,33 @@ public class Dojo {
 	public Dojo() {
 	}
 
+	public Dojo(String name) {
+		this.name = name;
+	}
 
 	//	//// GETTERS AND SETTERS /////////////////////////////
 	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Ninja> getNinjasList() {
+		return ninjasList;
+	}
+
+	public void setNinjasList(List<Ninja> ninjasList) {
+		this.ninjasList = ninjasList;
+	}
 }
