@@ -34,7 +34,7 @@
 	<!-- //// MAIN AREA //////////////////////////////////////// -->
 	<main role="main">
 		<div class="container mt-4">
-			<h1>Dinjas NEW</h1>
+			<h1>Ninjas NEW</h1>
 		</div>
 	</main>
 
