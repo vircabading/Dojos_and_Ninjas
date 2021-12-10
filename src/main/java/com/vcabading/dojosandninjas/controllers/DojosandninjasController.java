@@ -71,6 +71,7 @@ public class DojosandninjasController {
 
 	// //// RETRIEVE ///////////////////////////////////////////////
 
+	// **** Display All Dojos in the Index Page ********************
 	@GetMapping("/dojos")
 	public String index(Model model) {
 		List<Dojo> dojosList = this.dojoServ.retrieveAll();
@@ -78,11 +79,15 @@ public class DojosandninjasController {
 		return "index.jsp";
 	}
 
+	// **** Display all the Ninjas of a Dojo ***********************
 	@GetMapping("/dojos/{id}")
-	public String dojosId(@PathVariable("id") Long id) {
+	public String dojosId(@PathVariable("id") Long id, Model model) {
+		Dojo dojo = this.dojoServ.retrieveDojo(id);
+		model.addAttribute("dojo", dojo);
 		return "dojosid.jsp";
 	}
 
+	// **** Create a Form to Add a New Ninja to a Dojo *************
 	@GetMapping("/ninjas/new")
 	public String ninjasNew(@ModelAttribute("ninja") Ninja ninja, Model model) {
 		List<Dojo> dojosList = this.dojoServ.retrieveAll();
