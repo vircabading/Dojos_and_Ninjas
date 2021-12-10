@@ -62,4 +62,3 @@ public class DojoService {
 		this.dojoRepo.deleteById(id);
 	}
 }
-}
